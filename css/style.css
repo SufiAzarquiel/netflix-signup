@@ -2,13 +2,149 @@
     box-sizing: border-box;
 }
 
-.body {
+body {
     margin: 0;
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    background-color: blueviolet;
-    height: 500px;
+.content::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+img[src="img/logo.png"] {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+}
+
+.size-full {
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.myform::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.myform {
+    position: relative;
+    padding: 50px;
+    width: 380px;
+    animation: fade 1s;
+    color: #868580;
+    font-size: 12px;
+    padding-bottom: 100px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.myform h2 {
+    margin: 0 0 20px 0;
+    color: white;
+}
+
+.myform input[type="text"],
+.myform input[type="password"],
+.myform input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.myform input[type="text"],
+.myform input[type="password"] {
+    background-color: #333333;
+}
+
+.myform input[type="submit"] {
+    background-color: #e50913;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.w-100pp {
+    width: 100%;
+}
+
+.myform a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #868580;
+}
+
+img[src="img/facebookico.png"] {
+    margin-right: 5px;
+}
+
+.mb-m {
+    margin-bottom: 20px;
+}
+
+.my-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.txt-big {
+    font-size: 15px;
+}
+
+.txt-white {
+    color: white;
+}
+
+.txt-blue {
+    color: #0e47b8;
 }
